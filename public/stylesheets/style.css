@@ -1,0 +1,21 @@
+body {
+  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+img {
+    width: 30vh;
+    height: 30vh;
+}
+
+header {
+  background: -webkit-linear-gradient(left, rgb(132, 55, 220) 0%, rgb(221, 109, 132) 100%);
+}
+
+.create {
+  background: -webkit-linear-gradient(left, rgb(132, 55, 220) 0%, rgb(221, 109, 132) 100%);
+}

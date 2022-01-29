@@ -1,0 +1,30 @@
+<a class="btn text-white create mt-3 mb-3" href="/create">Create User</a>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Department</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each users}}
+    <tr>
+      <th scope="row">{{this.id}}</th>
+      <td>{{this.name}}</td>
+      <td>{{this.email}}</td>
+      <td>{{this.phone}}</td>
+      <td>{{this.department }}</td>
+      <td>
+          <a class="btn btn-success" href="/view/{{this.id}}">View</a>
+          <a class="btn btn-warning" href="/edit/{{this.id}}">Edit</a>
+          <a class="btn btn-danger" href="/delete/{{this.id}}">Delete</a>
+      </td>
+    </tr>
+    {{/each}}
+   
+  </tbody>
+</table>

@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row justify-content-xs-center">
+<h1>Edit User</h1>
+ 
+<form action="/update/{{user.id}}" method="POST">
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Full Name</label>
+   <input type="text" name="name" value="{{user.name}}" class="form-control" placeholder="">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" name="email" value="{{user.email}}" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Phone</label>
+   <input type="number" name="phone" value="{{user.phone}}" class="form-control" placeholder="">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Department</label>
+   <input type="text" name="department" value="{{user.department}}" class="form-control" required  placeholder="">
+</div>
+<div class="mb-3">
+  <button type="submit" class="btn text-white create mb-3">Edite</button>
+</div>
+</form>
+</div>
+</div>
